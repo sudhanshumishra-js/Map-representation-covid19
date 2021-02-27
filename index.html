@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href = "logo.jpg" type = "image/x-icon">
+    <title>MapRepresentation-Covid19</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .mapboxgl-popup {
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id='map' style='width: 100vw; height: 100vh;'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZG9uMDA3IiwiYSI6ImNrbGVtYzl6NjBmd3kydnByejJjcGh2aG0ifQ.UIoLVlM6ATwuWhLxHnhzew';
+        var map = new mapboxgl.Map({
+            container: 'map', // container ID
+            style: 'mapbox://styles/mapbox/streets-v11', // style URL
+            center: [0, 20], // starting position [lng, lat]
+            zoom: 1 // starting zoom
+        });
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
