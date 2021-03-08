@@ -8,4 +8,4 @@
 
 #### Note :  Data used is taken from data.json file, you can use any API for dynamic data.
 
-#### Live at `link`   
+#### Live at https://map-representation-covid19.vercel.app/   
